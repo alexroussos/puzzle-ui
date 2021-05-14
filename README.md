@@ -9,5 +9,6 @@ Using Node v14
 viewable at https://alexroussos-puzzle-ui.s3.amazonaws.com/index.html
 
 ## Notes to self
-- `npm run build`
-- `s3cmd sync ./build/* s3://alexroussos-puzzle-ui`
+- `npm run build` 
+- `serve -s build`
+- `s3cmd sync ./build/* s3://puzzles.roussos.world`

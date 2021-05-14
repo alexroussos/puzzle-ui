@@ -21,3 +21,12 @@ input:invalid {
 input:invalid:focus {
   border: 3px solid red;
 }
+
+.Solution {
+	display: block;
+	padding: 10px 0 10px 0;
+}
+
+.Word {
+	padding: 0 10px 0 10px;
+}
