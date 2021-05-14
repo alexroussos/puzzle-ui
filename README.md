@@ -2,11 +2,15 @@
 
 UIs for solving various puzzles
 
+Try it out! https://puzzles.roussos.world
+
+Built on the API at https://api.roussos.world/letter-boxed
+
+## Setup
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 Using Node v14
-
-viewable at https://alexroussos-puzzle-ui.s3.amazonaws.com/index.html
 
 ## Notes to self
 - `npm run build` 
