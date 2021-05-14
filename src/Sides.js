@@ -10,9 +10,9 @@ class Sides extends React.Component {
     this.getSides = this.getSides.bind(this); 
   }
 
-  handleSideChange(temperature, side) {
+  handleSideChange(letters, side) {
     this.setState(state => {
-      state.sides[side] = temperature;
+      state.sides[side] = letters;
       return state.sides;
     });  
   }

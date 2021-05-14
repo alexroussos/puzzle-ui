@@ -8,10 +8,6 @@ class Solutions extends React.Component {
     this.state = { solutions: [[]] };
     this.solve = this.solve.bind(this);
   }
-  myChangeHandler = (event) => {
-    this.setState({letters: event.target.value});
-    this.props.onSideChange(event.target.value, this.props.sideNumber);
-  }
 
   solve() {
     const headers = { 
@@ -28,9 +24,7 @@ class Solutions extends React.Component {
             console.error('There was an error!', error);
         });
   }
-
-
-
+  
   render() {
     return (
         <div>

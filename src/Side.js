@@ -6,8 +6,8 @@ class Side extends React.Component {
     this.state = { letters: '' };
   }
   myChangeHandler = (event) => {
-    this.setState({letters: event.target.value});
-    this.props.onSideChange(event.target.value, this.props.sideNumber);
+    this.setState({letters: event.target.value.toLowerCase()});
+    this.props.onSideChange(event.target.value.toLowerCase(), this.props.sideNumber);
   }
   render() {
     return (
