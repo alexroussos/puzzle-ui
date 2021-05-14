@@ -14,13 +14,11 @@ class Solutions extends React.Component {
   }
 
   solve() {
-    console.log('calling solve api')
     const headers = { 
       'x-api-key': 'C10PCPeVkv6jYc2jylyML4Zbg2YOgu9M1pDbJzA7',
       'content-type': 'application/json'
     };
     let sides = this.props.getSides();
-    console.log('submitting sides: ' + sides)
     let data = {"sides": sides}
     let url = 'https://api.roussos.world/letter-boxed' 
     axios.post(url, data, {headers})
@@ -30,6 +28,8 @@ class Solutions extends React.Component {
             console.error('There was an error!', error);
         });
   }
+
+
 
   render() {
     return (
@@ -41,7 +41,7 @@ class Solutions extends React.Component {
           </span>
           <div>
             <h2> Solutions </h2>
-            {this.state.solutions.map(solution => <Solution words={solution} />)}
+            {this.state.solutions ? this.state.solutions.map(solution => <Solution words={solution} />) : 'No solutions'}
           </div>
         </div>
     );
