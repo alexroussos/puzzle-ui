@@ -24,8 +24,6 @@ class Sides extends React.Component {
   render() {
     return (  
       <div> 
-        <h1>Letter Boxed Solver</h1>
-        <span>Solve the New York Times <a href='https://www.nytimes.com/puzzles/letter-boxed'>Letter Boxed</a> Puzzle</span>
         <div className="Sides">
           <h2>Enter Letters</h2>
           <Side sideNumber="0" onSideChange={this.handleSideChange} / >  
