@@ -32,8 +32,8 @@ class Solutions extends React.Component {
     return (
         <div>
           <span>
-            <form className="commentForm" onSubmit={this.solve}>
-                  <button type="submit" class="submit-button">Solve!</button>
+            <form className="SolveForm" onSubmit={this.solve}>
+                  <button type="submit" className="SolveButton">Solve!</button>
             </form>
           </span>
           <div>
