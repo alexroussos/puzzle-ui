@@ -6,7 +6,7 @@ import styles from './Solutions.css';
 class Solutions extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { solutions: [[]] };
+    this.state = { solutions: [['']] };
     this.solve = this.solve.bind(this);
   }
 
@@ -23,7 +23,7 @@ class Solutions extends React.Component {
     axios.post(url, data, {headers})
         .then(response => this.setState({ solutions: response.data }))
          .catch(error => {
-            this.setState({ solutions: error.message });
+            this.setState({ solutions: [[error.message]] });
             console.error('There was an error!', error);
         });
   }
